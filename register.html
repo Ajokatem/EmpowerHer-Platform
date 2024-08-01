@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration <form action=""></form></title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(34, 36, 35, 0.7),rgba(9, 23, 88, 0.7)),url(images/lopic.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.register-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            max-width: 100%;
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .error-message {
+            color: #e74c3c;
+            font-size: 12px;
+            display: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(27, 25, 25);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: black;
+        }
+
+        .form-group {
+            border-top: 10px;
+        }
+
+        p a {
+            color: rgb(15, 15, 15);
+            
+            text-decoration: none;
+            display: flex;
+            text-decoration: underline;
+        }
+
+        p a {
+            color: rgb(3, 87, 87);
+        }
+
+  </style>
+</head>
+<body>
+    
+    <div class="register-container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                <span class="error-message" id="confirmPasswordError"></span>
+                <button type="submit">Register</button>
+                <p>Already has an account? <a href="login.html">LogIn here</a></p>
+            </div>
+        </form>
+    </div>
+    
+<script src="register.js"></script>
+    
+</body>
+</html>

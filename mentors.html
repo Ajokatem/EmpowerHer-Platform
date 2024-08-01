@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Our mentors</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <style>
+        /* Importing Google Font - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(rgba(3, 182, 99, 0.7),rgba(5, 22, 92, 0.7)), url(images/updateourvision.jpg) #030728 no-repeat center;
+  background-size: cover;
+  position: relative;
+  background-repeat: repeat;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.card-list .card-item {
+  height: auto;
+  color: #fff;
+  user-select: none;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-list .card-item .user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 3px solid #fff;
+  padding: 4px;
+}
+
+.card-list .card-item .user-profession {
+  font-size: 1.15rem;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button {
+  font-size: 1.25rem;
+  padding: 10px 35px;
+  color: #030728;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .message-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: #fff;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.slider-wrapper .swiper-slide-button {
+  color: #fff;
+  margin-top: -55px;
+  transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+
+.yinyin {
+    color: white;
+    background-color: rgb(36, 33, 33);
+    width: 50%;
+    padding: auto;
+    border-radius: 50px;  
+}
+
+.yinyin:hover {
+    border: 1px solid rgb(243, 238, 238);
+    background: black;
+    transition: 1s;
+}
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div>
+            <h5>Meet Our Experienced Mentors</h5>
+            <p>Become One Of Us Today and <a href="register.html"><button class="yinyin">Register Here</button></a></p>
+
+        </div>
+    </div>
+      <div class="container swiper">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <img src="images/mentor1.jpg" alt="User Image" class="user-image">
+              <h2 class="user-name">Garima Gupta</h2>
+              <p class="user-profession">Business Operations Leader / HR Leader</p>
+              <a href="https://www.mentoring-club.com/the-mentors/garima-gupta"><button class="message-button">View details</button></a>
+            </div>
+    
+            <div class="card-item swiper-slide">
+              <img src="images/mentor2.jpg" alt="User Image" class="user-image">
+              <h2 class="user-name">Mr. Bernardo Fanti</h2>
+              <p class="user-profession">Head of Partnerships</p>
+              <a href="https://www.mentoring-club.com/the-mentors/bernardo-fanti"><button class="message-button">View details</button></a>
+            </div>
+    
+            <div class="card-item swiper-slide">
+              <img src="images/mentor3.jpg" alt="User Image" class="user-image">
+              <h2 class="user-name">Richard Ajangdit</h2>
+              <p class="user-profession">Senior Software Engineer at GitHub</p>
+              <a href="https://www.mentoring-club.com/the-mentors/muritadoh-sodeeq"><button class="message-button">View Detail</button></a>
+            </div>
+    
+            <div class="card-item swiper-slide">
+              <img src="images/mentor13.jpg" alt="User Image" class="user-image">
+              <h2 class="user-name">Chioma Kevin</h2>
+              <p class="user-profession">Marketing Specialist</p>
+              <a href="https://www.mentoring-club.com/the-mentors/arun-rasika-karunakaran"><button class="message-button">View details</button></a>
+            </div>
+    
+            <div class="card-item swiper-slide">
+              <img src="images/mentor5.jpg" alt="User Image" class="user-image">
+              <h2 class="user-name">Emily Joseph</h2> 
+              <p class="user-profession">UX Designer </p>
+              <a href="https://www.mentoring-club.com/the-mentors/diana-rasheva"><button class="message-button">View details</button></a>
+            </div>
+    
+            <div class="card-item swiper-slide">
+              <img src="images/mentor7.jpg" alt="User Image" class="user-image">
+              <h2 class="user-name">Wilson Deng</h2>
+              <p class="user-profession">Life Coach / Anxiety & Stress / Self Confidence Mentor</p>
+              <a href="https://www.mentoring-club.com/the-mentors/ahmad-bakdad"><button class="message-button">View details</button></a>
+            </div>
+          </div>
+    
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      </div>
+    
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+      
+      <script>const swiper = new Swiper('.slider-wrapper', {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 30,
+      
+        
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true
+        },
+      
+        
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        
+        breakpoints: {
+          0: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2
+          },
+          1024: {
+            slidesPerView: 3
+          }
+        }
+      });
+      </script>
+    </body>
+    </html>
+</html>
+
+
+      

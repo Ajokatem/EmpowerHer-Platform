@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login page</title>
+
+    <style> 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(33, 39, 37, 0.7),rgba(77, 77, 145, 0.7)),url(images/lopic.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    display: none; 
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(27, 25, 25);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: black;
+}
+
+.forgot p a {
+    color: rgb(15, 15, 15);
+    border-top: 10px;
+    text-decoration: none;
+    display: flex;
+    text-decoration: underline;
+}
+
+.forgot p a {
+    color: rgb(6, 104, 104);
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <span class="error-message" id="usernameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <span class="error-message" id="passwordError"></span>
+                <div class="forgot">
+            
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                
+                    <a href="#">Forgot password</a>
+            </div>
+            </div>
+            <button type="submit">Login</button>
+            <div class="forgot">
+                <p>Don't have account? <a href="register.html">Register here</a></p>
+            </div>
+    
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
